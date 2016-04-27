@@ -98,27 +98,6 @@ void soft_right (void)      //Left wheel forward, Right wheel is stationary
  motion_set(0x02);
 }
 
-void soft_left_2 (void)     //Left wheel backward, right wheel stationary
-{
- motion_set(0x01);
-}
-
-void soft_right_2 (void)    //Left wheel stationary, Right wheel backward
-{
- motion_set(0x08);
-}
-
-void hard_stop (void)       //hard stop(stop suddenly)
-{
-  motion_set(0x00);
-}
-
-void soft_stop (void)       //soft stop(stops solowly)
-{
-  motion_set(0x0F);
-}
-
-
 
 void init_devices (void) 
 { 
